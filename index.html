@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toko Fashion Online by Putri Kalerin Harahap</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="logo">KAL'S FRAGRANCES</div>
+
+      <div class="search">
+        <input type="text" placeholder="Cari produk..." />
+      </div>
+
+      <div class="icons">
+        <a href="#">Masuk / Daftar</a>
+        <span class="icon">❤</span>
+        <span class="icon">🛒</span>
+      </div>
+    </header>
+
+    <nav>
+      <a href="#">FLORAL 🌸</a>
+      <a href="#">CITRUS 🍊</a>
+      <a href="#">WOODY 🌲</a>
+      <a href="#">GOURMAND 🍬</a>
+      <a href="#">FRESH 🌿</a>
+      <a href="#">ORIENTAL 🔥</a>
+    </nav>
+
+    <main>
+      <section class="banner"></section>
+
+      <section class="banner-text">
+        <h1>PARFUM PILIHAN TERBAIK</h1>
+        <p>Hadirkan kesan elegan dengan aroma pilihan</p>
+        <button type="button">Belanja Sekarang</button>
+      </section>
+
+      <section class="produk">
+        <h2>Produk Populer</h2>
+        <div class="container" id="daftarProduk"></div>
+      </section>
+
+      <section class="form-pembelian">
+        <div class="form-wrapper">
+          <h2>Form Pembelian</h2>
+
+          <form id="formBeli" class="form-grid">
+            <div class="form-group">
+              <input type="text" placeholder="Nama Lengkap" required />
+            </div>
+
+            <div class="form-group">
+              <input type="email" placeholder="Email" required />
+            </div>
+
+            <div class="form-group">
+              <input type="number" placeholder="Nomor HP" required />
+            </div>
+
+            <div class="form-group">
+              <select id="produkSelect" required>
+                <option value="">Pilih Produk</option>
+                <option value="Extrait de Parfum">Extrait de Parfum</option>
+                <option value="Eau de Parfum (EDP)">Eau de Parfum (EDP)</option>
+                <option value="Eau de Toilette (EDT)">Eau de Toilette (EDT)</option>
+                <option value="Eau de Cologne (EDC)">Eau de Cologne (EDC)</option>
+                <option value="Body Mist">Body Mist</option>
+              </select>
+            </div>
+
+            <div class="full payment-group">
+              <p>Metode Pembayaran:</p>
+              <div class="payment-options">
+                <label>
+                  <input type="radio" name="bayar" required />
+                  COD
+                </label>
+                <label>
+                  <input type="radio" name="bayar" />
+                  Transfer
+                </label>
+              </div>
+            </div>
+
+            <div class="full agreement">
+              <label>
+                <input type="checkbox" required />
+                Saya setuju dengan syarat & ketentuan
+              </label>
+            </div>
+
+            <div class="full submit-box">
+              <button type="submit">Beli Sekarang</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Toko Fashion Online</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
